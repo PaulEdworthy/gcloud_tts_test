@@ -8,11 +8,8 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'google_cloud_credentials.json'
 client = texttospeech_v1.TextToSpeechClient()
 
 # test text to pass into speech synthesis
-text = '''So the cool thing about Google Cloud's Text To Speech is that we can customize it.
-From the pitch to the tone, even translate the language. Check out the demo of voices here.
-I settled for the male voice of Wavenet D. Now that we have picked a voice the rest is easy.
-We just set it and send over the text. We will create a function for that,
-it will take text and output it to an mp3 file.
+text = '''
+Text to speech test
 '''
 
 synthesis_input = texttospeech_v1.SynthesisInput(text=text)
